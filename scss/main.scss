@@ -170,3 +170,33 @@ img {
 #main-footer {
   color: #333333;
 }
+
+// mobile CSS
+
+@media only screen and (max-width: 500px) {
+  #navbar{
+    color: blue;
+  }
+  }
+  .header-content {
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  #info {
+    h2 {
+      text-align: center;
+    }
+    a {
+      position: relative;
+      top: 50%;
+      left: 30%;
+      margin-bottom: 10px;
+    }
+
+    img {
+      display: none;
+    }
+  }
+}
