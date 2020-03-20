@@ -173,17 +173,26 @@ img {
 
 // mobile CSS
 
-@media only screen and (max-width: 500px) {
-  #navbar{
-    color: blue;
-  }
-  }
-  .header-content {
+@media only screen and (max-width: 600px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
     h1 {
-      font-size: 50px;
+      font-size: 30px;
+      margin-top: -1rem;
+    }
+    ul {
+      margin-bottom: -1rem;
+      margin-top: -1rem;
     }
   }
 
+  .header-content {
+    h1 {
+      font-size: 30px;
+    }
+  }
   #info {
     h2 {
       text-align: center;

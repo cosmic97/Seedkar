@@ -188,12 +188,26 @@ img {
   color: #333333;
 }
 
-@media only screen and (max-width: 500px) {
-  #navbar .hide {
-    color: blue;
+@media only screen and (max-width: 600px) {
+  #main-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #main-nav h1 {
+    font-size: 30px;
+    margin-top: -1rem;
+  }
+  #main-nav ul {
+    margin-bottom: -1rem;
+    margin-top: -1rem;
   }
   .header-content h1 {
-    font-size: 50px;
+    font-size: 30px;
   }
   #info h2 {
     text-align: center;
