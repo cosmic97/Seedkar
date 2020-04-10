@@ -10,7 +10,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -25,7 +25,10 @@
       </nav>
     </div>
 
-    
+    <!-- Spinner -->
+    <div class='spinner-wrapper'>
+      <div class="spinner"></div>
+    </div>
     <!-- Header -->
     <header id="header-home">
       <div class="header-content">
@@ -75,7 +78,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active carousel-image-1">
         <div class="carousel-caption d-none text-left d-sm-block mb-5">
-          <h1  class=" display-4">What are you waiting for?</h1>
+          <h1>What are you waiting for?</h1>
           <p class="lead">Join Now</p>
           <a href="#" class="btn btn-light btn-lg ">Sign Up</a>
         </div>
@@ -167,6 +170,14 @@
                 time: 1000
             });
         });
+
+        //spinner
+      let spinnerWrapper = document.querySelector('.spinner-wrapper');
+
+      window.addEventListener('load', function () {
+        // spinnerWrapper.style.display = 'none';
+        spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+      });
     </script>
   </body>
 </html>
