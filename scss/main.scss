@@ -70,6 +70,7 @@ img {
 
   h1 {
     font-size: 4rem;
+    animation: fadeUp 1s forwards;
   }
 
   p {
@@ -217,6 +218,17 @@ img {
 @keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

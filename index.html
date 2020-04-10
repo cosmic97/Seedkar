@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -109,18 +110,18 @@
     <section id="info" class="py-3">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 align-self-center">
+          <div class="col-md-6 align-self-center animate-left">
             <h2 class="span">What We Do</h2>
             <p class="lead">We are a private Investing company, which  helps private investor to fund in startups</p>
             <a href="" class="btn btn-outline-danger btn-lg">Learn More</a>  
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 animate-right">
             <img src="/img/you-x-ventures-Oalh2MojUuk-unsplash.jpg" alt="" class="img-fluid">
           </div>
         </div>
       </div>
     </section>
-    <section id="contact" class="p-5">
+    <section id="contact" class="p-5 animate-top">
       <div class="dark-overlay">
         <div class="row">
           <div class="col">
@@ -135,7 +136,7 @@
     </section>
     
     <!-- Footer -->
-    <div id="main-footer" class="mt-5">
+    <div id="main-footer" class="mt-5 animate-bottom">
       <div class="container">
         <p class="lead text-center">Copyright &copy; 2019, All Rights Reserved</p>
       </div>
@@ -177,6 +178,33 @@
       window.addEventListener('load', function () {
         // spinnerWrapper.style.display = 'none';
         spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+      });
+
+      // scroll animation
+      window.sr = ScrollReveal();
+      sr.reveal('.animate-left',{
+        origin: 'left',
+        duration: 1000,
+        distance: '25rem',
+        delay: '300'
+      });
+      sr.reveal('.animate-right',{
+        origin: 'right',
+        duration: 1000,
+        distance: '25rem',
+        delay: '600'
+      });
+      sr.reveal('.animate-top',{
+        origin: 'top',
+        duration: 1000,
+        distance: '25rem',
+        delay: '300'
+      });
+      sr.reveal('.animate-bottom',{
+        origin: 'bottom',
+        duration: 1000,
+        distance: '25rem',
+        delay: '600'
       });
     </script>
   </body>
