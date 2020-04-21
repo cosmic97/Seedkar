@@ -188,6 +188,7 @@ img {
 
 #main-footer {
   color: #333333;
+  overflow: hidden;
 }
 
 .spinner-wrapper {
